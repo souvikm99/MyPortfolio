@@ -1,0 +1,266 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333333; /* Default text color */
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.navbar {
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
+    border-radius: 8px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.navbar a {
+    color: #333333;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #0056b3;
+    background-color: #e1e1e1; /* Light gray background for hover/active */
+    border-radius: 5px;
+}
+
+.bio-header {
+    text-align: center;
+    padding: 20px;
+    background-color: #eeeeee; /* Light gray background for header */
+    /* border-bottom: 2px solid #dddddd; */
+    border-radius: 8px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid #0056b3; /* Border color */
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.bio-summary, .project-item p {
+    padding: 0 20px;
+    text-align: justify;
+}
+
+section {
+    margin: 20px 0;
+    background-color: #fafafa; /* Very light gray background for sections */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #0056b3; /* Dark blue color for headings */
+    text-transform: uppercase;
+    font-weight: bold; /* Make font-weight bold for better heading visibility */
+    padding: 10px;
+    background-color: #e1e1e1; /* Light gray background for section titles */
+    border-radius: 5px;
+    margin: -20px -20px 20px -20px; /* Overlap section title with section border */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+/* ... existing styles ... */
+
+.education-section, .experience-section {
+    background-color: #ffffff; /* White background for a clean look */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* Space between sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.timeline {
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #007bff; /* Line color */
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0; /* No margin for the last item */
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+}
+
+.timeline-content {
+    padding-left: 20px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #333333;
+    font-size: 1.2em;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+    padding: 0;
+}
+
+/* ... rest of your CSS ... */
+
+
+
+
+
+.skills-list li, .project-item {
+    background-color: #e1e1e1; /* Consistent background color for skill items and projects */
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skills-list li {
+    display: inline-block;
+}
+
+/* ... existing styles ... */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.project-item {
+    background-color: #ffffff; /* White background for project cards */
+    border: 1px solid #e1e1e1; /* Border color for the card */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure the content fits within the border radius */
+    transition: transform 0.3s ease; /* Smooth transformation upon hovering */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.project-item h3 {
+    color: #0056b3; /* Dark blue color for project titles */
+    background-color: #e1e1e1; /* Light gray background for project titles */
+    margin: 0; /* Remove default margin */
+    padding: 15px; /* Spacing within the title area */
+}
+
+.project-item p {
+    padding: 15px;
+    border-top: 1px solid #e1e1e1; /* Separator between title and description */
+    margin: 0; /* Remove default margin */
+    background-color: #fafafa; /* Light gray background for the description */
+    height: 100px; /* Fixed height for uniformity */
+    overflow: auto; /* Allows scrolling if the text is too long */
+}
+
+.project-item .project-link {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #007bff;
+    background-color: #333333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-top: 1px solid #e1e1e1;
+}
+
+.project-item .project-link:hover {
+    background-color: #0056b3;
+}
+
+/* ... rest of your CSS ... */
+
+
+.cv-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.cv-link:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .skills-list li, .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
