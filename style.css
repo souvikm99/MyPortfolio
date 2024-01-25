@@ -259,8 +259,20 @@ ul {
         margin: 10px auto;
     }
 
-    .skills-list li, .navbar ul li {
-        display: block;
-        margin: 10px 0;
+    .navbar ul {
+        display: flex; /* Use flexbox to keep items in a row */
+        justify-content: center; /* Center items in the navbar */
+        padding-left: 0; /* Remove padding */
+    }
+
+    .navbar ul li {
+        display: inline-block; /* Keep the list items inline */
+        margin-right: 5px; /* Reduce margin between items */
+    }
+
+    .navbar a {
+        padding: 5px 10px; /* Reduce padding */
+        font-size: 0.8em; /* Reduce font size */
+        font-size: 2vw;
     }
 }
